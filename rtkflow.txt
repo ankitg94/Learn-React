@@ -1,0 +1,43 @@
+//Rtk guide
+
+step-1
+installation
+npm install @reduxjs/toolkit react-redux
+step-2
+create slice (logic)
+
+export const MySlice=createSlice({
+    name:"mYSlice",
+    initialState:{
+        key:"value"
+        key2:"value"
+    },
+    reducers:{
+        logic1:(state,action)=>{
+        state.key(for access data)==action.payload(for loading the data)
+        },
+        logic2:(state,action)=>{
+          state.key2(for access data)==action.payload 
+        }
+
+    }
+})
+export const {logic1,logic2} = MySlice.actions
+
+export default MySlice.reducer
+
+//step-3
+create store
+export const store = configureStore({
+    (name) mYSlice:useReducer(MySlice)
+})
+//step-4
+add them to the global State (index.js)// main js file
+<Provider store={store}/>
+//step-5
+use as a global State component
+const name = useSelector((state)=>state.mYSlice.key)//for getting the data
+
+const dispatch=useDispatch()// for sending the data 
+ 
+
