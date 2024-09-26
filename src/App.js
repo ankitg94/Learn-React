@@ -5,6 +5,8 @@ import Parents from './Components/Parents'
 import Abc from "./Props/Abc"
 import Xyz from "./Props/Xyz"
 import GithubApi from './Api/GithubApi'
+import Counter from './Rtk/Counter.js'
+import Form from './Rtk/Form.js'
 
 const App = () => {
   return (
@@ -30,7 +32,8 @@ const App = () => {
      {/* unit-2 */}
 
      {/* state */}
-     {/* <UseStateExample/> */}
+     {
+     /* <UseStateExample/> */}
 
      {/* Api data getting */}
      
@@ -41,9 +44,9 @@ const App = () => {
       {/* <Form/> */}
       {/* <Login/> */}
       {/* <Profile/> */}
-
-
-  
+   {/* RTK  */}
+    {/* <Counter/> */}
+    <Form/>
     </>
   )
 }
