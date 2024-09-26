@@ -46,6 +46,7 @@ const App = () => {
       {/* <Profile/> */}
    {/* RTK  */}
     {/* <Counter/> */}
+    <h1>this is the form data </h1>
     <Form/>
     </>
   )
